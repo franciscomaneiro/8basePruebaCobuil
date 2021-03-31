@@ -1,0 +1,9 @@
+{
+  "data": {
+    "id": "ckmwltqz0000b08mjf3mdb2xk"
+  },
+  "headers": {
+    "x-header-1": "header value"
+  },
+  "body": "{\"foo\":\"bar\"}"
+}

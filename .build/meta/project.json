@@ -1,0 +1,25 @@
+{
+  "name": "my-project",
+  "functions": [
+    {
+      "name": "changeState",
+      "handler": "changeState.handler",
+      "pathToFunction": "src/resolvers/resolver/handler.ts"
+    },
+    {
+      "name": "task",
+      "handler": "task.handler",
+      "pathToFunction": "src/tasks/task/handler.ts"
+    },
+    {
+      "name": "webhook",
+      "handler": "webhook.handler",
+      "pathToFunction": "src/webhooks/webhook/handler.ts"
+    },
+    {
+      "name": "trigger",
+      "handler": "trigger.handler",
+      "pathToFunction": "src/triggers/trigger/handler.ts"
+    }
+  ]
+}

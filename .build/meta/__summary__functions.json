@@ -1,0 +1,44 @@
+{
+  "functions": [
+    {
+      "name": "changeState",
+      "handler": "changeState.handler"
+    },
+    {
+      "name": "task",
+      "handler": "task.handler"
+    },
+    {
+      "name": "webhook",
+      "handler": "webhook.handler"
+    },
+    {
+      "name": "trigger",
+      "handler": "trigger.handler"
+    }
+  ],
+  "resolvers": [
+    {
+      "name": "changeState",
+      "functionName": "changeState",
+      "gqlType": "Mutation"
+    }
+  ],
+  "triggers": [
+    {
+      "name": "trigger",
+      "operation": "create",
+      "tableName": "Users",
+      "functionName": "trigger",
+      "type": "before"
+    }
+  ],
+  "webhooks": [
+    {
+      "name": "webhook",
+      "functionName": "webhook",
+      "httpMethod": "POST",
+      "path": "/webhook"
+    }
+  ]
+}
